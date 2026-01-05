@@ -1,0 +1,50 @@
+{
+  "github_url": "https://github.com/Traia-IO/nikola-test-coinmarketcap-mcp-server",
+  "mcp_server": {
+    "name": "nikola-test-coinmarketcap-mcp",
+    "description": "The coinmarketcap api is a restful json api that provides programmatic access to comprehensive cryptocurrency market intelligence, including real-time and historical prices, market capitalization, trading volume, ohlcv time-series data, global market metrics (such as total market cap and bitcoin dominance), exchange and market-pair data, and rich metadata for thousands of digital assets. authenticated via api keys and offered across free to enterprise tiers, it is designed for reliability and scale, making it suitable for applications such as price tracking dashboards, portfolio management tools, trading and analytics systems, quantitative research and backtesting, defi and exchange monitoring, data pipelines, and media or educational platforms that require accurate, up-to-date crypto market data.",
+    "server_type": "streamable-http",
+    "requires_api_key": true,
+    "api_key_header": "Authorization",
+    "api_keys": [
+      "NIKOLA_TEST_COINMARKETCAP_API_KEY"
+    ],
+    "capabilities": [
+      "getv2toolspriceconversion",
+      "getv3fearandgreedhistorical",
+      "getv3fearandgreedlatest",
+      "getv1blockchainstatisticslatest",
+      "getv1communitytrendingtoken",
+      "getv1communitytrendingtopic",
+      "getv1contentpostscomments",
+      "getv1cryptocurrencyquoteshistorical",
+      "getv1cryptocurrencyquoteslatest",
+      "getv1cryptocurrencytrendinggainerslosers",
+      "getv1cryptocurrencytrendinglatest",
+      "getv1cryptocurrencytrendingmostvisited",
+      "getv1exchangelistingslatest",
+      "getv1exchangemarketpairslatest",
+      "getv1exchangequoteshistorical",
+      "getv1exchangequoteslatest",
+      "getv1globalmetricsquoteshistorical",
+      "getv1globalmetricsquoteslatest",
+      "getv2cryptocurrencymarketpairslatest",
+      "getv2cryptocurrencyohlcvhistorical",
+      "getv2cryptocurrencyohlcvlatest",
+      "getv2cryptocurrencyquoteshistorical",
+      "getv1partnersflipsidecryptofcasquoteslatest"
+    ],
+    "payment_protocol": "402",
+    "dual_mode": true,
+    "dual_mode_description": "Supports both authenticated (free with API key) and payment (402 protocol) modes"
+  },
+  "deployment_method": "cloud_run",
+  "gcp_project_id": "traia-mcp-servers",
+  "gcp_region": "us-central1",
+  "tags": [
+    "nikola test coinmarketcap",
+    "api",
+    "mcp"
+  ],
+  "ref": "main"
+}
